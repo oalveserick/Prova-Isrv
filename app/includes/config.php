@@ -1,8 +1,7 @@
 <?php
-define('DB_HOST', 'db');
-define('DB_NAME', 'aval_acao');
-define('DB_USER', 'user');
-define('DB_PASS', 'pass');
+define('MYSQL_DATABASE', 'aval_acao');
+define('MYSQL_USER', 'user');
+define('MYSQL_PASSWORD', 'pass');
 @session_start();
 ?>
 
