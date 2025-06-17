@@ -7,12 +7,12 @@ services:
     volumes:
       - ./app:/var/www/html
     depends_on:
-      - db
+      - mysql
     networks:
       - rede_aval
     restart: always
   
-  db:
+  mysql:
     image: mysql:8.0
     container_name: db_aval
     environment:
@@ -39,7 +39,7 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - db
+      - mysql
     networks:
       - rede_aval
     restart: always
