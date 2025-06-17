@@ -5,5 +5,3 @@ define('MYSQL_USER', 'user');
 define('MYSQL_PASSWORD', 'pass');
 @session_start();
 ?>
-
-
